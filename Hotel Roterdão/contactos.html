@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="Prime Consulting" content="">
+
+    <title>Home - Hotel Roterdão</title>
+	
+     <script>
+      function initMap() {
+          var myLatLng = {lat: 14.908658, lng:  -23.518307};
+          var mapDiv = document.getElementById('map');
+          var map = new google.maps.Map(mapDiv, {
+              center: myLatLng,
+              zoom: 17
+          });
+          var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+          var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              icon: iconBase + 'schools_maps.png'
+          });
+          var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: 'Hotel Roterdão'
+          });
+          var infowindow = new google.maps.InfoWindow({
+              content:"Hotel Roterdão"
+          });
+          infowindow.open(map,marker);
+      }
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <header>
+       
+          <div class="cabeca container">
+            <div class="row"> 
+                <div class="col-xs-2 col-sm-2 col-md-2  col-lg-2" >
+                <!--    
+                   <div class="row">
+                   		<h1 class="nome-hotel" id="hotel"><b>HOTEL </b></h1>
+                   </div>
+                   <div class="row">
+                   		<h1 class="nome-hotel" id="roterdao"><b>ROTERDÃO</b></h1>
+                   </div>-->
+                    <div class="row"><a href="index.html"><img class="logo_hotel img-responsive pull-right" src="img/hotel_roderdao-logo.png" alt=""></a></div>
+                </div>
+              <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+               		<div class="row">
+                    <img class="logo_ilha img-responsive pull-right" src="img/SantiagoLogo.png" alt="">
+               		</div>
+               		
+                    <div class="row">
+            	 
+                 <nav class="navbar navbar-inverse " role="navigation">
+                                 	
+                                    <div class="navbar-header">
+                                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                      </button>
+                                     
+                                    </div>
+                                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                      <ul class="nav navbar-nav">
+                                        <li><a href="sobre.html">Sobre Nós</a></li>
+                                        <li><a href="servicos.html">Serviços</a></li>
+                                        <li><a href="satisfacao.html">Satisfação</a></li>
+                                        <li  class="active"><a href="contactos.html">Contactos</a></li>
+                                        <li><a href="reservas.html">Reservas</a></li>
+                                      </ul>
+                                      
+                                    </div>
+                                  
+                        </nav>           
+            </div>	
+               
+               
+              </div>
+             
+            </div>
+            
+          
+        </div>
+            
+       
+    </header>
+    
+    <div class="corpo container">
+           
+            <div class="row">
+            	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" >
+                 	
+                        <div class="corpo-header row">
+                       	 	<div class=" col-sm-3 col-lg-3 col-md-3" ><h3 class="subtitulo">Contactos</h3></div>
+                            <div class="corpo-header-img col-lg-9 col-md-9" ></div>
+                        </div>
+                        <div class="corpo-content row" >
+                         <div class="col-sm-8 col-md-8 col-lg-8">
+                              <div class="img-responsive" id="map"></div>
+                        	</div>
+                            <div class="col-sm-4 col-md-4 col-lg-4" >
+                               <address>
+                  							<span class="glyphicon glyphicon-home" aria-hidden="true"></span> <strong  >Achada Santo António, Rua das Flores nº1</strong><br>
+                  							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:#">hotelrdam@hotmail.com</a><br>
+                 							 <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <abbr title="Telefone" style="font-family: sans-serif">Telef.:</abbr> 	+238 2602900<br>
+                  							<span class="glyphicon glyphicon-print" aria-hidden="true"></span> <abbr title="Movel" style="font-family: sans-serif">Fax.:</abbr> +238 2602905
+                			   </address>
+                            </div>
+                           
+                       </div>
+                 
+                  		
+            	</div>
+                <div id="panel-subnav" class="col-xs-3  col-lg-3">
+                    <div class="row">
+                        <div class="panel panel-default thumbnail">
+                            <div class="panel-body"><a href="quartos.html"><img class="subnav-img img-responsive" src="img/quarto.png"></a></div>
+                            <div class="panel-footer">Nossos Quartos</div>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default thumbnail">
+                            <div class="panel-body"><a href="restaurante.html"><img class="subnav-img img-responsive" src="img/restaurante.png"></a></div>
+                            <div class="panel-footer">Restaurante</div>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default thumbnail">
+                            <div class="panel-body"><a href="galeria.html"><img class="subnav-img img-responsive" src="img/galeria.png"></a></div>
+                            <div class="panel-footer">Galeria</div>
+                        </div>   
+                    </div>
+            	</div>
+            </div>
+
+            <div class="c row">
+            	<div class="details-1">
+    	<div class="col-lg-2 col-md-2 dropdown-button">
+            <div class="input-group">
+                  <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Número de Adultos" type="number" required>
+            </div>
+        </div>
+       <div class="col-lg-2 col-md-2 dropdown-button">
+            <div class="input-group">
+                  <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Número de Crianças" type="number" required>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2 dropdown-button">
+            <div class="book_date">
+                
+                    <input class="date" id="datepicker" type="text" value="Check In" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Check In';}">
+              
+            </div>	
+        </div>
+       
+        <div class=" col-lg-2 col-md-2 dropdown-button">
+           <div class="book_date">
+                
+                    <input class="date1" id="datepicker1" type="text" value="Check Out" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Check Out';}">
+                
+            </div>
+        </div>
+         <div class=" col-lg-2 col-md-2 dropdown-button">
+        	<div class="section_1">
+							 <select id="country" onchange="change_country(this.value)" class="frm-field required">
+								<option value="null">Double Room</option>
+								<option value="null">Sigle Room</option>         
+								<option value="AX">Suit Room</option>
+								<option value="AX">Guest Room</option>
+							 </select>
+			</div>
+        </div>
+        <div class=" col-lg-2 col-md-2 submit_button pull-right">
+            
+                <input type="submit" value="Book Now">
+           
+        </div>
+    </div>
+            	
+            </div>
+            
+            <div id="panel-subnav1" class="row">
+            	<div class="col-xs-4">
+                	<div class="panel panel-default thumbnail">
+  						<div class="panel-body"><a href="quartos.html"><img class="subnav-img img-responsive" src="img/quarto.png"></a></div>
+  						<div class="panel-footer">Nossos Quartos</div>
+					</div>  
+                </div>
+                <div class="col-xs-4">
+                	<div class="panel panel-default thumbnail">
+  						<div class="panel-body"><a href="restaurante.html"><img class="subnav-img img-responsive" src="img/restaurante.png"></a></div>
+  						<div class="panel-footer">Restaurante</div>
+					</div> 
+                </div>
+                <div class="col-xs-4">
+                	<div class="panel panel-default thumbnail">
+  						<div class="panel-body"><a href="galeria.html"><img class="subnav-img img-responsive" src="img/galeria.png"></a></div>
+  						<div class="panel-footer">Galeria</div>
+					</div>  
+                </div>
+            	
+            </div>
+            
+            
+          <!-- FOOTER -->
+        <div class="container"><footer>
+            <hr class="featurette-divider">
+            <p style="text-align:center">&copy; eTourism Project by <b>Prime Consulting</b> &middot; <a href="#" >Termos</a> &middot; <a href="#" >Privacidade</a></p>
+        </footer></div>
+
+        </div>
+<!-- jQuery --> 
+<script src="js/jquery-2.2.3.min.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!-- Scrolling Nav JavaScript --> 
+<script src="js/jquery.easing.min.js"></script>
+
+ <!---strat-date-piker---->
+							<script src="js/jquery-ui.js"></script>
+							  <script>
+									  $(function() {
+										$( "#datepicker,#datepicker1" ).datepicker();
+									  });
+							  </script>
+						<!---/End-date-piker---->
+  </body>
+</html>

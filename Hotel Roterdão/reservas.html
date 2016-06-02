@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="Prime Consulting" content="">
+
+    <title>Reserva - Hotel Roterdão</title>
+	  
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <header>
+       
+          <div class="cabeca container">
+            <div class="row"> 
+                <div class="col-xs-2 col-sm-2 col-md-2  col-lg-2" >
+                <!--    
+                   <div class="row">
+                   		<h1 class="nome-hotel" id="hotel"><b>HOTEL </b></h1>
+                   </div>
+                   <div class="row">
+                   		<h1 class="nome-hotel" id="roterdao"><b>ROTERDÃO</b></h1>
+                   </div>-->
+                    <div class="row"><a href="index.html"><img class="logo_hotel img-responsive pull-right" src="img/hotel_roderdao-logo.png" alt=""></a></div>
+                </div>
+              <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+               		<div class="row">
+                    <img class="logo_ilha img-responsive pull-right" src="img/SantiagoLogo.png" alt="">
+               		</div>
+               		
+                    <div class="row">
+            	 
+                 <nav class="navbar navbar-inverse " role="navigation">
+                                 	
+                                    <div class="navbar-header">
+                                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                      </button>
+                                     
+                                    </div>
+                                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                      <ul class="nav navbar-nav">
+                                        <li><a href="sobre.html">Sobre Nós</a></li>
+                                        <li><a href="servicos.html">Serviços</a></li>
+                                        <li><a href="satisfacao.html">Satisfação</a></li>
+                                        <li ><a href="contactos.html">Contactos</a></li>
+                                        <li class="active"><a href="reservas.html">Reservas</a></li>
+                                      </ul>
+                                      
+                                    </div>
+                                  
+                        </nav>           
+            </div>	
+               
+               
+              </div>
+             
+            </div>
+            
+          
+        </div>
+            
+       
+    </header>
+    
+    <div class="corpo container">
+           
+            <div class="row">
+            	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" >
+                 	
+                        <div class="corpo-header row">
+                       	 	<div class="col-lg-3" corpo-header-title><h3>Reservas</h3></div>
+                            <div class="corpo-header-img col-lg-9" ></div>
+                        </div>
+                        <div class="corpo-content row" style="margin-top:15px">
+                        	<small class="obrigatorio">*Campos de preenchimento obrigatório.</small>
+          				
+          <form>
+            <div class="col-md-6">
+                <h4 >Dados Pessoais</h4>
+                <div class="form-group ">
+                  <div class="row">
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                           <label for="nome">Nome<span  class="obrigatorio">*</span></label>
+                           <input type="name" class="form-control" id="nome" name="" placeholder="Nome" required>
+                           <label for="apelido">Apelido<span cclass="obrigatorio">*</span></label>
+                           <input type="apelido" class="form-control" id="apelido" name="apelido" placeholder="Apelido" required>
+                           <label for="email">Email<span class="obrigatorio">*</span></label>
+                           <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                           <label for="num_doc" >N&ordm; de documento<span class="obrigatorio">*</span></label>
+                           <input type="text" class="form-control" id="num_doc" name="num_doc" placeholder="Numero do Documento" required>
+                           <small class="hint  help-block">Pode indicar o n&ordm; de BI ou de Passaporte</small>
+                      </div>
+                                       
+    
+                      <div class="col-xs-6 col-sm-6 col-md-6"> 
+                            <label for="telefone">Telefone<span class="obrigatorio">*</span></label>
+                            <input type="tel" class="form-control" id="telefone" name="" placeholder="Telefone" required>
+                            <label for="endereco">Endere&ccedil;o<span class="obrigatorio">*</span></label>
+                            <input type="text" class="form-control" id="endereco" name="" placeholder="endere&ccedil;o">
+                            <label for="nacionalidade">Ncionalidade</label>
+                            <input type="text" class="form-control" id="nacionalidade" name="" placeholder="Nacionalidade">
+                      </div>
+                  </div>
+                </div>
+              
+            </div>
+
+            <div class="col-md-6">
+             <h4 >Informaçoes da reserva</h4>
+                <div class="form-group ">
+                  
+                       <div class="row">  
+                           <div class="col-xs-6 col-sm-6 col-md-6"> 
+                                <label for="data_chegada">Data Chegada<span class="obrigatorio">*</span></label>
+                                <input type="date" class="form-control" id="data_chegada" name="data_chegada" placeholder="Data Chegada" required>
+                                <label for="data_partida">Data Partida<span class="obrigatorio">*</span></label>
+                                <input type="date" class="form-control" id="data_partida" name="data_partida" placeholder="Data Partida" required>
+                                <label for="quartos">Quartos<span class="obrigatorio">*</span></label>
+                                <select class="form-control" id="quartos" name="quartos" required="required">
+                                  <option disabled selected value> Selecione uma op&ccedil;&atilde;o </option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                                  <option>7</option>
+                                  <option>8</option>
+                                  <option>9</option>
+                                  <option>10</option>
+                                </select>
+
+                                <label for="adultos" >Adultos<span class="obrigatorio">*</span></label>
+                                <select class="form-control" id="adultos" name="adultos" required="required">
+                                  <option disabled selected value> Selecione uma op&ccedil;&atilde;o </option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                                  <option>7</option>
+                                  <option>8</option>
+                                  <option>9</option>
+                                  <option>10</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6"> 
+                                  <label for="pais_origem">Pais de Origem</label>
+                                  <input type="text" class="form-control" id="pais_origem" name="" placeholder="Pais de Origem">
+                                  <label for="motivo">Motivo Viagem</label>
+                                  <input type="text" class="form-control" id="motivo" name="" placeholder="Motivo Viagem">
+                                  <label for="info">Informa&ccedil;&otilde;es adicionais</label>
+                                  <textarea class="form-control" id="info" name="info" rows="6" placeholder="Informa&ccedil;&otilde;es adicionais..."></textarea>				</div>
+                        </div>
+                    
+                </div>
+                
+            </div>
+            <div class="row" style="margin:0 0 15px 0;padding-right:15px"><button type="submit" class="pull-right btn btn-success btn-inverse" style="border-radius:0" >Reservar</button>
+              <button type="submit" class="pull-right btn btn-primary btn-inverse" style="border-radius:0;margin-right: 10px;" >Cancelar</button></div>
+              
+           
+          </form>                           
+                       	</div>
+                 
+                  		
+            	</div>
+                <div id="panel-subnav" class="col-xs-3  col-lg-3">
+                    <div class="row">
+                        <div class="panel panel-default thumbnail">
+                            <div class="panel-body"><a href="quartos.html"><img class="subnav-img img-responsive" src="img/quarto.png"></a></div>
+                            <div class="panel-footer">Nossos Quartos</div>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default thumbnail">
+                            <div class="panel-body"><a href="restaurante.html"><img class="subnav-img img-responsive" src="img/restaurante.png"></a></div>
+                            <div class="panel-footer">Restaurante</div>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default thumbnail">
+                            <div class="panel-body"><a href="galeria.html"><img class="subnav-img img-responsive" src="img/galeria.png"></a></div>
+                            <div class="panel-footer">Galeria</div>
+                        </div>   
+                    </div>
+            	</div>
+            </div>
+
+            <div class="c row">
+            	<div class="details-1">
+    	<div class=" col-lg-2 col-md-2 dropdown-button">
+            <div class="input-group">
+                  <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Número de Adultos" type="number" required>
+            </div>
+        </div>
+       <div class=" col-lg-2 col-md-2  dropdown-button">
+            <div class="input-group">
+                  <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Número de Crianças" type="number" required>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2 dropdown-button">
+            <div class="book_date">
+                
+                    <input class="date" id="datepicker" type="text" value="Check In" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Check In';}">
+              
+            </div>	
+        </div>
+       
+        <div class="col-lg-2 col-md-2 dropdown-button">
+           <div class="book_date">
+                
+                    <input class="date1" id="datepicker1" type="text" value="Check Out" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Check Out';}">
+                
+            </div>
+        </div>
+         <div class=" col-lg-2 col-md-2 dropdown-button">
+        	<div class="section_1">
+							 <select id="country" onchange="change_country(this.value)" class="frm-field required">
+								<option value="null">Double Room</option>
+								<option value="null">Sigle Room</option>         
+								<option value="AX">Suit Room</option>
+								<option value="AX">Guest Room</option>
+							 </select>
+			</div>
+        </div>
+        <div class="col-lg-2 col-md-2 submit_button pull-right">
+            
+                <input type="submit" value="Book Now">
+           
+        </div>
+    </div>
+            	
+            </div>
+            
+            <div id="panel-subnav1" class="row">
+            	<div class="col-xs-4">
+                	<div class="panel panel-default thumbnail">
+  						<div class="panel-body"><a href="quartos.html"><img class="subnav-img img-responsive" src="img/quarto.png"></a></div>
+  						<div class="panel-footer">Nossos Quartos</div>
+					</div>  
+                </div>
+                <div class="col-xs-4">
+                	<div class="panel panel-default thumbnail">
+  						<div class="panel-body"><a href="restaurante.html"><img class="subnav-img img-responsive" src="img/restaurante.png"></a></div>
+  						<div class="panel-footer">Restaurante</div>
+					</div> 
+                </div>
+                <div class="col-xs-4">
+                	<div class="panel panel-default thumbnail">
+  						<div class="panel-body"><a href="galeria.html"><img class="subnav-img img-responsive" src="img/galeria.png"></a></div>
+  						<div class="panel-footer">Galeria</div>
+					</div>  
+                </div>
+            	
+            </div>
+            
+            
+          <!-- FOOTER -->
+        <div class="container"><footer>
+            <hr class="featurette-divider">
+            <p style="text-align:center">&copy; eTourism Project by <b>Prime Consulting</b> &middot; <a href="#" >Termos</a> &middot; <a href="#" >Privacidade</a></p>
+        </footer></div>
+
+        </div>
+<!-- jQuery --> 
+<script src="js/jquery-2.2.3.min.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!-- Scrolling Nav JavaScript --> 
+<script src="js/jquery.easing.min.js"></script>
+
+ <!---strat-date-piker---->
+							<script src="js/jquery-ui.js"></script>
+							  <script>
+									  $(function() {
+										$( "#datepicker,#datepicker1" ).datepicker();
+									  });
+							  </script>
+						<!---/End-date-piker---->
+  </body>
+</html>
